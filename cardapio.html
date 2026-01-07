@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Miau Café</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <svg width="32" height="28" viewBox="0 0 347 299" class="logo-svg">
+                        <path d="M 240.00 238.00 L 237.00 260.00 L 217.00 269.00 L 156.00 255.00 L 86.00 269.00 L 62.00 254.00 L 65.00 227.00 L 84.00 195.00 L 108.00 172.00 L 144.00 155.00 L 169.00 158.00 L 199.00 176.00 L 227.00 208.00 Z" fill="#8B7355" stroke="none"/>
+                        <path d="M 37.00 107.00 L 52.00 106.00 L 64.00 111.00 L 83.00 133.00 L 89.00 165.00 L 83.00 180.00 L 73.00 188.00 L 58.00 189.00 L 48.00 185.00 L 36.00 175.00 L 26.00 159.00 L 22.00 127.00 L 28.00 114.00 Z" fill="#8B7355" stroke="none"/>
+                        <path d="M 265.00 107.00 L 276.00 117.00 L 280.00 128.00 L 276.00 159.00 L 265.00 176.00 L 254.00 185.00 L 243.00 189.00 L 229.00 188.00 L 219.00 180.00 L 214.00 169.00 L 213.00 153.00 L 218.00 135.00 L 226.00 122.00 L 241.00 109.00 Z" fill="#8B7355" stroke="none"/>
+                        <path d="M 97.00 30.00 L 111.00 31.00 L 122.00 37.00 L 134.00 51.00 L 142.00 73.00 L 139.00 103.00 L 129.00 116.00 L 119.00 121.00 L 108.00 121.00 L 95.00 115.00 L 82.00 100.00 L 74.00 79.00 L 76.00 50.00 L 88.00 34.00 Z" fill="#8B7355" stroke="none"/>
+                        <path d="M 208.00 31.00 L 221.00 41.00 L 227.00 53.00 L 227.00 83.00 L 220.00 100.00 L 208.00 114.00 L 194.00 121.00 L 183.00 121.00 L 174.00 117.00 L 163.00 103.00 L 160.00 92.00 L 162.00 65.00 L 170.00 48.00 L 184.00 34.00 Z" fill="#8B7355" stroke="none"/>
+                    </svg>
+                    Miau Café
+                </a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cardapio.html" class="nav-link active">Cardápio</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="servicosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Serviços
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicosDropdown">
+                            <li><a class="dropdown-item" href="gatos.html#adocao">Adoção de Gatos</a></li>
+                            <li><a class="dropdown-item" href="visitar.html#eventos">Eventos Especiais</a></li>
+                            <li><a class="dropdown-item" href="visitar.html#workshops">Workshops</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="visitar.html#reservas">Reserva para Grupos</a></li>
+                            <li><a class="dropdown-item" href="cardapio.html#encomendas">Encomendas</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="gatos.html" class="nav-link">Nossos Gatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="visitar.html" class="nav-link">Visite-nos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="https://google.com/search?q=Miau+Caf%C3%A9" target="_blank" class="nav-icon" title="Pesquisar Miau Café (Link Externo)">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="https://example.com/carrinho" target="_blank" class="nav-icon" title="Carrinho de Compras (Link Externo)">
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" style="background: linear-gradient(rgba(139, 115, 85, 0.8), rgba(139, 115, 85, 0.8)), url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80'); background-size: cover; background-position: center;">
+            <div class="container">
+                <div class="hero-content" style="max-width: 800px; text-align: center;">
+                    <h1 style="color: var(--white);">Nosso Cardápio</h1>
+                    <p style="color: rgba(255, 255, 255, 0.9);">Deliciosas opções para todos os gostos</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section menu">
+            <div class="container">
+                <div class="menu-categories">
+                    <button class="category-btn active" data-category="all">Todos</button>
+                    <button class="category-btn" data-category="coffee">Cafés</button>
+                    <button class="category-btn" data-category="tea">Chás</button>
+                    <button class="category-btn" data-category="pastry">Doces</button>
+                    <button class="category-btn" data-category="sandwich">Salgados</button>
+                </div>
+                
+                <div class="menu-grid">
+                    <!-- Café Expresso -->
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Café Expresso">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Café Expresso</h3>
+                                <span class="menu-item-price">R$ 8,00</span>
+                            </div>
+                            <p class="menu-item-description">Nosso clássico espresso, preparado com grãos selecionados e torra média.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Quente</span>
+                                <span class="tag">Tradicional</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cappuccino -->
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cappuccino">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Cappuccino</h3>
+                                <span class="menu-item-price">R$ 12,00</span>
+                            </div>
+                            <p class="menu-item-description">Espresso com leite vaporizado e uma generosa camada de espuma.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Quente</span>
+                                <span class="tag">Cremoso</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Chá de Camomila -->
+                    <div class="menu-item" data-category="tea">
+                        <div class="menu-item-image">
+                            <img src="https://totalpass.com/wp-content/uploads/2025/01/cha-de-camomila-passo-a-passo.jpg" alt="Chá de Camomila">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Chá de Camomila</h3>
+                                <span class="menu-item-price">R$ 10,00</span>
+                            </div>
+                            <p class="menu-item-description">Infusão relaxante de camomila, perfeita para momentos de calma.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Quente</span>
+                                <span class="tag">Relaxante</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Croissant -->
+                    <div class="menu-item" data-category="pastry">
+                        <div class="menu-item-image">
+                            <img src="https://swiftbr.vteximg.com.br/arquivos/ids/208226/622880-mini-croissant_rec.jpg?v=638860372648870000" alt="Croissant">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Croissant</h3>
+                                <span class="menu-item-price">R$ 9,00</span>
+                            </div>
+                            <p class="menu-item-description">Croissant folhado e dourado, perfeito para acompanhar seu café.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Folhado</span>
+                                <span class="tag">Tradicional</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Bolo de Cenoura -->
+                    <div class="menu-item" data-category="pastry">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80" alt="Bolo de Cenoura">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Bolo de Cenoura</h3>
+                                <span class="menu-item-price">R$ 12,00</span>
+                            </div>
+                            <p class="menu-item-description">Nosso clássico bolo de cenoura com cobertura de chocolate.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Caseiro</span>
+                                <span class="tag">Com chocolate</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sanduíche Natural -->
+                    <div class="menu-item" data-category="sandwich">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1567234669003-dce7a7a88821?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Sanduíche Natural">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Sanduíche Natural</h3>
+                                <span class="menu-item-price">R$ 18,00</span>
+                            </div>
+                            <p class="menu-item-description">Pão integral com frango desfiado, alface, tomate e maionese caseira.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Saudável</span>
+                                <span class="tag">Integral</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Latte -->
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Latte">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Latte</h3>
+                                <span class="menu-item-price">R$ 14,00</span>
+                            </div>
+                            <p class="menu-item-description">Café espresso com leite vaporizado e uma fina camada de espuma.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Quente</span>
+                                <span class="tag">Suave</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mocha -->
+                    <div class="menu-item" data-category="coffee">
+                        <div class="menu-item-image">
+                            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mocha">
+                        </div>
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h3 class="menu-item-title">Mocha</h3>
+                                <span class="menu-item-price">R$ 16,00</span>
+                            </div>
+                            <p class="menu-item-description">Deliciosa combinação de espresso, chocolate e leite vaporizado.</p>
+                            <div class="menu-item-tags">
+                                <span class="tag">Quente</span>
+                                <span class="tag">Chocolate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Miau Café</h3>
+                    <p>Onde o café encontra os gatinhos. Um espaço de amor, cuidado e bons momentos.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/miaucafe" target="_blank" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://facebook.com/miaucafe" target="_blank" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/551134567890" target="_blank" class="social-link" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <a href="index.html">Início</a>
+                    <a href="sobre.html">Sobre Nós</a>
+                    <a href="cardapio.html">Cardápio</a>
+                    <a href="gatos.html">Nossos Gatos</a>
+                    <a href="visitar.html">Visite-nos</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua dos Felinos, 123</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+551134567890">(11) 3456-7890</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:contato@miaucafe.com">contato@miaucafe.com</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Miau Café. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
